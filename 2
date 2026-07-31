@@ -1,0 +1,144 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: #6d4c54;
+    background-color: #fff0f5; /* Lavender Blush */
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    color: #ff69b4;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d16ba5;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ff1493;
+}
+
+/* Hero Section */
+#hero {
+    padding: 120px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #ffe4e1 0%, #ffc0cb 100%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.badge {
+    background-color: #ffffff;
+    color: #ff69b4;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.15);
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #c71585;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #8b5a6b;
+    margin-bottom: 30px;
+}
+
+#cta-btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
+    transition: all 0.2s ease;
+}
+
+#cta-btn:hover {
+    background-color: #ff1493;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.6);
+}
+
+/* About Section */
+#about {
+    padding: 40px 0 80px 0;
+    text-align: center;
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.25);
+    border: 3px solid #ffdde1;
+}
+
+#about h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #c71585;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #ffffff;
+    color: #d16ba5;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-top: 2px dashed #ffc0cb;
+}
